@@ -4,7 +4,7 @@ export default function FAQ() {
       <div className="hero-content w-full px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
-          <h2 className="text-xl lg:text-4xl text-center font-bold">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center font-bold">
             Frequently Asked Questions
           </h2>
           <p className="py-6 text-lg mb-6 text-center">

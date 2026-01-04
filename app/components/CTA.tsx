@@ -11,7 +11,7 @@ export default function CTA() {
             <p className="py-6 text-lg">
             Don't wait - take the first step towards your goal <i>now</i>
             </p>
-            <a href="https://buy.stripe.com/9AQ8ysdnWdvCaZ2aEG">
+            <a href="/upload">
               <button className="btn btn-primary btn-lg text-white">Get My Body Fat % <span className="text-lg">→</span></button>
             </a>
           </div>

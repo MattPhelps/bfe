@@ -1,31 +1,17 @@
-// components/AmplitudeInitializer.tsx
+// amplitude.ts
 "use client";
+import * as amplitude from "@amplitude/unified";
 
-import { useEffect } from "react";
-import * as amplitude from "@amplitude/analytics-browser";
+export function initAmplitude() {
+  if (typeof window === "undefined") return;
 
-const AMPLITUDE_API_KEY = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
+  amplitude.initAll(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!, {
+    analytics: { autocapture: true },
+    sessionReplay: { sampleRate: 1 },
+  });
+}
 
-const AmplitudeInitializer = () => {
-  useEffect(() => {
-    if (AMPLITUDE_API_KEY) {
-      amplitude.init(AMPLITUDE_API_KEY, {
-        autocapture: {
-          elementInteractions: true,
-          formInteractions: false,
-          fileDownloads: false,
-        },
-      });
-      console.log("Amplitude initialized");
-    } else {
-      console.error("Missing Amplitude API Key");
-    }
-  }, []);
-
-  return null; // This component only initializes Amplitude and doesn't render anything
-};
-
-export default AmplitudeInitializer;
+export default amplitude;
 
 
 // Track custom events across your app

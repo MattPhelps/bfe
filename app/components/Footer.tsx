@@ -6,7 +6,7 @@ export default function Footer() {
                 <p className="text-base text-white">
                     <b className="font-heading">Body Fat Estimator</b>
                     <br />
-                    Copyright 2025 - all rights reserved.
+                    Copyright 2026 - all rights reserved.
                 </p>
 
             </aside>
