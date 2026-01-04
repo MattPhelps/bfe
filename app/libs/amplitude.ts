@@ -1,44 +1,34 @@
-// lib/amplitude.ts
-import * as amplitude from '@amplitude/analytics-browser';
+// components/AmplitudeInitializer.tsx
+"use client";
 
-// Get the Amplitude API key from environment variables
+import { useEffect } from "react";
+import * as amplitude from "@amplitude/analytics-browser";
+
 const AMPLITUDE_API_KEY = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
 
-if (!AMPLITUDE_API_KEY) {
-  console.error('Missing Amplitude API Key');
-}
+const AmplitudeInitializer = () => {
+  useEffect(() => {
+    if (AMPLITUDE_API_KEY) {
+      amplitude.init(AMPLITUDE_API_KEY, {
+        autocapture: {
+          elementInteractions: true,
+          formInteractions: false,
+          fileDownloads: false,
+        },
+      });
+      console.log("Amplitude initialized");
+    } else {
+      console.error("Missing Amplitude API Key");
+    }
+  }, []);
 
-// Initialize Amplitude (should be called once, typically in the app initialization)
-export const initAmplitude = () => {
-  if (!AMPLITUDE_API_KEY) {
-    console.error("Missing NEXT_PUBLIC_AMPLITUDE_API_KEY");
-    return;
-  }
-
-  amplitude.init(AMPLITUDE_API_KEY, undefined, {
-    autocapture: {
-      formInteractions: false,
-      fileDownloads: false,
-      elementInteractions: false,
-    },
-  });
+  return null; // This component only initializes Amplitude and doesn't render anything
 };
+
+export default AmplitudeInitializer;
+
 
 // Track custom events across your app
 export const trackEvent = (eventName: string, properties: Record<string, any> = {}) => {
   amplitude.track(eventName, properties);
-};
-
-// Function to identify the user in Amplitude and set properties
-export const identifyUser = (user_id: string, properties: Record<string, any>) => {
-  const identify = new amplitude.Identify();
-
-  // Set user properties like email, name, etc.
-  Object.keys(properties).forEach((key) => {
-    identify.set(key, properties[key]);
-  });
-
-  // Set the user ID and identify the user
-  amplitude.setUserId(user_id);
-  amplitude.identify(identify);
 };
