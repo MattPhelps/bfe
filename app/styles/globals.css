@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply font-sans; /* Roboto for body text */
+  color: var(--foreground);
+  background: var(--background);
+}
+
+h1, h2, h3 {
+  @apply font-heading; /* Poppins for headings */
+}
+
+p {
+  font-size: 1rem; /* Keep paragraph font size consistent */
+}
+
