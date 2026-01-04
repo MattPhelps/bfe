@@ -18,6 +18,7 @@ export default function Home() {
   return (
    <>
       <Hero />
+      <Comparison />
       <FAQ />
       <CTA />
        {/* <Examples />  */}

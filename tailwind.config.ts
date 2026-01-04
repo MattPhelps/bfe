@@ -24,7 +24,8 @@ module.exports = {
           info: "#1abc9c",     // Info color
           success: "#00AA6E",  // Success color
           warning: "#f39c12",  // Warning color
-          error: "#e74c3c",    // Error color
+          error: "#e74c3c",   // Error color
+          gray: "#e3e3e3",  
         },
       },
       "fantasy", // Keep the default fantasy theme as a fallback

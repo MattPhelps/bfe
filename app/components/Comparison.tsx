@@ -7,7 +7,7 @@ export default function Comparison() {
             {/* Manual Roasting */}
             <div className="card bg-[#FFEAEC] w-full lg:w-1/3 shadow-xl">
               <div className="card-body">
-                <h2 className="card-title text-center justify-center text-xl font-bold">Expensive Scans</h2>
+                <h2 className="card-title text-center justify-center text-xl font-bold">DEXA Scans</h2>
                 <ul className="mt-4 space-y-4">
                   <li className="flex items-center text-neutral">
                     <span className="text-red-500 mr-2">❌</span>
@@ -32,7 +32,7 @@ export default function Comparison() {
                 <ul className="mt-4 space-y-4">
                   <li className="flex items-center text-neutral">
                     <span className="text-green-500 mr-2">✅</span>
-                    Costs $3 for a one-time scan
+                    FREE
                   </li>
                   <li className="flex items-center text-neutral">
                     <span className="mr-2">✅</span>
