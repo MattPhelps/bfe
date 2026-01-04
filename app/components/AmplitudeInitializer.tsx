@@ -2,30 +2,17 @@
 import { useEffect } from "react";
 import * as amplitude from "@amplitude/analytics-browser";
 
-const AMPLITUDE_API_KEY = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
-
-const AmplitudeInitializer = () => {
+export default function AmplitudeInitializer() {
   useEffect(() => {
-    if (AMPLITUDE_API_KEY) {
-      try {
-        amplitude.init(AMPLITUDE_API_KEY, undefined, {
-  autocapture: {
-    formInteractions: false,
-    fileDownloads: false,
-    elementInteractions: false,
-  },
-  serverZone: "EU",
-});
-        console.log("Amplitude initialized successfully.");
-      } catch (err) {
-        console.error("Error initializing Amplitude:", err);
+    amplitude.init(
+      process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!,
+      undefined,
+      {
+        serverUrl: "https://api.eu.amplitude.com",
+        logLevel: amplitude.Types.LogLevel.Debug,
       }
-    } else {
-      console.error("Missing Amplitude API Key.");
-    }
-  }, []); // Empty dependency array ensures it runs once on mount.
+    );
+  }, []);
 
-  return null; // This component doesn't render anything.
-};
-
-export default AmplitudeInitializer;
+  return null;
+}
