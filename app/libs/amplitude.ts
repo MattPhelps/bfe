@@ -10,18 +10,18 @@ if (!AMPLITUDE_API_KEY) {
 
 // Initialize Amplitude (should be called once, typically in the app initialization)
 export const initAmplitude = () => {
-  if (AMPLITUDE_API_KEY) {
-    amplitude.init(AMPLITUDE_API_KEY, {
-      // Optional autocapture settings
-      autocapture: {
-        formInteractions: false,
-        fileDownloads: false,
-        elementInteractions: false,
-      },
-    });
-  } else {
-    console.error('Amplitude API Key is undefined');
+  if (!AMPLITUDE_API_KEY) {
+    console.error("Missing NEXT_PUBLIC_AMPLITUDE_API_KEY");
+    return;
   }
+
+  amplitude.init(AMPLITUDE_API_KEY, undefined, {
+    autocapture: {
+      formInteractions: false,
+      fileDownloads: false,
+      elementInteractions: false,
+    },
+  });
 };
 
 // Track custom events across your app
