@@ -80,8 +80,8 @@ export const metadata = {
           <p>
             If you have any questions about this Privacy Policy, please contact us
             at{" "}
-            <a href="mailto:support@roastify.com" className="text-blue-500">
-              support@roastify.com
+            <a href="mailto:matt@leandme.com" className="text-blue-500">
+              matt@leandme.com
             </a>
             .
           </p>
