@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
 import UploadDropzone from "@/app/components/UploadDropZone";
 import { trackEvent } from "@/app/libs/amplitude";
+import BodyFatEstimatorContent from "@/app/components/BodyFatEstimatorContent";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
@@ -62,18 +63,23 @@ function UploadPageContent() {
     }
   };
 
-  if (!imageUrl) {
-    return (
+ if (!imageUrl) {
+  return (
+    <>
       <div className="hero min-h-screen -mt-40 flex items-center justify-center">
         <div className="text-center lg:text-left max-w-md">
           <h1 className="text-center text-3xl lg:text-4xl font-bold mb-10">
-          Upload a shirtless image of yourself
+            Upload a shirtless image of yourself
           </h1>
           <UploadDropzone />
         </div>
       </div>
-    );
-  }
+
+      <BodyFatEstimatorContent variant="upload" />
+    </>
+  );
+}
+
 
   return (
     <section className="hero flex flex-col items-center justify-start min-h-screen pt-0 lg:pt-0">
@@ -108,13 +114,16 @@ function UploadPageContent() {
       <a href="/upload">
       {loading ? "" : <button className="btn btn-primary btn-outline btn-lg text-white mt-6">Estimate Again<span className="text-lg">→</span></button>} 
             </a>
+            <div className="mt-60">
+            <BodyFatEstimatorContent variant="results" />
+            </div>
     </section>
+    
   );
 }
 
 export default function UploadPage() {
  
-
   return (
     <Suspense
       fallback={
@@ -127,4 +136,3 @@ export default function UploadPage() {
     </Suspense>
   );
 }
-// 

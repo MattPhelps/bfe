@@ -13,7 +13,6 @@ export default function Footer() {
             <nav>
                 <h4 className="footer-title font-heading text-lg">Links</h4>
                 <p><a className="link link-hover" href="/faqs">FAQs</a></p>
-                <p><a className="link link-hover" href="/contact">Contact</a></p>
             </nav>
             <nav>
                 <h4 className="footer-title font-heading text-lg">Legal</h4>
