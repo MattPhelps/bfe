@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="footer bg-[#e3e3e3] text-base-content p-10">
             <aside>
-            <img src="/favicon.ico" alt="Body Fat Estimator Logo" className="w-8 h-8 " />
+            <img src="/favicon.ico" alt="Body Fat Estimator Logo" className="w-8 h-8 "/>
                 <p className="text-base">
                     <b className="font-heading">Body Fat Estimator</b>
                     <br />
@@ -11,8 +11,10 @@ export default function Footer() {
 
             </aside>
             <nav>
-                <h4 className="footer-title font-heading text-lg">Links</h4>
-                <p><a className="link link-hover" href="/faqs">FAQs</a></p>
+                <h4 className="footer-title font-heading text-lg">Support</h4>
+                <p><a className="link link-hover" href="/about">About</a></p>
+                <p><a className="link link-hover" href="/#faqs">FAQs</a></p>
+                <p><a className="link link-hover" href="/contact">Contact</a></p>
             </nav>
             <nav>
                 <h4 className="footer-title font-heading text-lg">Legal</h4>

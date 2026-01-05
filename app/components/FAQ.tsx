@@ -1,6 +1,6 @@
 export default function FAQ() {
   return (
-    <div id="faq" className="hero mt-10 lg:mt-40 flex items-center justify-center bg-base-100">
+    <div id="faqs" className="hero mt-10 lg:mt-40 flex items-center justify-center bg-base-100">
       <div className="hero-content w-full px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}

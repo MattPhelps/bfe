@@ -27,10 +27,11 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content text-base bg-base-100 rounded-box z-[1] mt-3 w-42 p-2 shadow"
           >
             <li>
-              <a href="/upload">
+              <a href="/upload"
+               className="hover:bg-transparent focus:bg-transparent active:bg-transparent">
               Estimate Body Fat
               </a>
             </li>
@@ -39,7 +40,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          className="btn btn-ghost font-heading text-2xl flex items-center gap-2"
+          className="btn btn-ghost font-heading text-xl flex items-center gap-2 hover:bg-transparent focus:bg-transparent active:bg-transparent"
           href="/"
         >
           <img
@@ -51,9 +52,10 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu with Spacing */}
-        <ul className="menu menu-horizontal gap-4 text-lg px-1 hidden lg:flex ml-12">
+        <ul className="menu menu-horizontal gap-4 text-base px-1 hidden lg:flex ml-12">
           <li>
-            <a href="/upload">
+            <a href="/upload"
+             className="hover:bg-transparent hover:underline focus:bg-transparent active:bg-transparent">
               Estimate Body Fat
             </a>
           </li>
