@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
         version: "80537f9eead1a5bfa72d5ac6ea6414379be41d4d4f6679fd776e9535d1eb58bb", // llava-13b version slug
         input: {
           top_p: 1,
-          temperature: 0.3,
+          temperature: 0,
           prompt: `Estimate this person's body fat percentage to the nearest integer based on the image. Take as much time as you need to be as accurate as you can. Look at all aspects of the person's physique to help make the most accurate estimate possible. Respond with only the number followed by a percent sign "%". Do not include any explanation or extra text.`,
 
           image: imageBase64,

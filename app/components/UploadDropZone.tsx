@@ -55,7 +55,7 @@ export default function UploadDropzone() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full max-w-lg p-6 border-2 border-dashed rounded-lg cursor-pointer bg-[] border-gray-400 hover:border-secondary"
+      className="flex flex-col items-center justify-center w-full max-w-lg p-6 border-2 border-dashed rounded-lg cursor-pointer bg-[] border-gray-400  shadow-sm hover:shadow-md transition"
       onClick={handleButtonClick} // Makes the entire area clickable
       onDragOver={(e) => e.preventDefault()}
       onDrop={handleDrop}
@@ -66,7 +66,7 @@ export default function UploadDropzone() {
         className="hidden"
         onChange={handleFileUpload}
       />
-      <button className="btn btn-lg btn-primary mt-10 mb-5 text-white transform transition-transform duration-200 hover:scale-105">Upload Image</button>
+      <button className="btn btn-lg btn-primary mt-10 mb-5 text-white transform transition-transform duration-200 hover:scale-105">Upload a Photo</button>
       <label className="text-center text-gray-600">
         <p className="text-lg mb-5">or drop a file</p>
       </label>

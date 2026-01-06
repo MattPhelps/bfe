@@ -69,7 +69,7 @@ function UploadPageContent() {
       <div className="hero min-h-screen -mt-40 flex items-center justify-center">
         <div className="text-center lg:text-left max-w-md">
           <h1 className="text-center text-3xl lg:text-4xl font-bold mb-10">
-            Upload a shirtless image of yourself
+            Upload a shirtless photo of yourself
           </h1>
           <UploadDropzone />
         </div>
