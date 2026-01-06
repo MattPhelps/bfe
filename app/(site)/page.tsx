@@ -4,10 +4,9 @@ import Examples from "../components/Examples";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 import Comparison from "../components/Comparison";
-import SingleReview from "../components/SingleReview";
 
 const title = "Body Fat Estimator – What % Body Fat Are You?";
-const description = "Discover your body fat percentage with our Body Fat Estimator. Get quick, accurate results to track your fitness progress and optimize your health goals.";
+const description = "Calculate your body fat percentage with our Body Fat Estimator. Get a quick and accurate estimation to track your weigh loss progress and optimize your body fat %.";
 
 export const metadata: Metadata = {
   title: title,
