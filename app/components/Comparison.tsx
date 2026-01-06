@@ -60,7 +60,7 @@ export default function Comparison() {
                 </li>
                 <li className="flex items-center text-neutral">
                   <span className="text-green-500 mr-2">✅</span>
-                  Instant results in seconds
+                  Instant results calculated in seconds
                 </li>
                 <li className="flex items-center text-neutral">
                   <span className="text-green-500 mr-2">✅</span>
