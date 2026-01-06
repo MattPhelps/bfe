@@ -20,48 +20,61 @@ function UploadPageContent() {
   }, [imageUrl]);
 
   const fetchAndEstimate = async (imageUrl: string) => {
-    setLoading(true);
-    try {
-      const response = await fetch(imageUrl);
-      const blob = await response.blob();
-      const reader = new FileReader();
+  setLoading(true);
+  try {
+    // ✅ Resolve relative paths like /examples/example1.webp
+    const resolvedUrl =
+      imageUrl.startsWith("/")
+        ? `${window.location.origin}${imageUrl}`
+        : imageUrl;
 
-      reader.onloadend = async () => {
-        const base64WithMime = reader.result as string;
+    const response = await fetch(resolvedUrl, { cache: "no-store" });
 
-        const res = await fetch("/api/estimate", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ imageBase64: base64WithMime }),
-        });
-
-        const data = await res.json();
-        console.log("Estimate API response:", data);
-
-        if (data.estimate) {
-          const estimateText = Array.isArray(data.estimate)
-            ? data.estimate.join(" ").trim()
-            : String(data.estimate).trim();
-
-            trackEvent("Estimate Bodyfat", {
-              estimate: estimateText,
-            });
-
-          setEstimate(estimateText);
-        } else {
-          setEstimate("Error");
-        }
-
-        setLoading(false);
-      };
-
-      reader.readAsDataURL(blob);
-    } catch (err) {
-      console.error("Estimation error:", err);
-      setEstimate("Error");
-      setLoading(false);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch image: ${response.status}`);
     }
-  };
+
+    const contentType = response.headers.get("content-type") || "";
+    if (!contentType.startsWith("image/")) {
+      throw new Error(`Not an image: ${contentType}`);
+    }
+
+    const blob = await response.blob();
+    const reader = new FileReader();
+
+    reader.onloadend = async () => {
+      const base64WithMime = reader.result as string;
+
+      const res = await fetch("/api/estimate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ imageBase64: base64WithMime }),
+      });
+
+      const data = await res.json();
+
+      if (data?.estimate) {
+        const estimateText = Array.isArray(data.estimate)
+          ? data.estimate.join(" ").trim()
+          : String(data.estimate).trim();
+
+        trackEvent("Estimate Bodyfat", { estimate: estimateText });
+        setEstimate(estimateText);
+      } else {
+        setEstimate("Error");
+      }
+
+      setLoading(false);
+    };
+
+    reader.readAsDataURL(blob);
+  } catch (err) {
+    console.error("Estimation error:", err);
+    setEstimate("Error");
+    setLoading(false);
+  }
+};
+
 
  if (!imageUrl) {
   return (

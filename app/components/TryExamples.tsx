@@ -19,10 +19,15 @@ const EXAMPLES: Example[] = [
 
 export default function TryExamples() {
   const router = useRouter();
+  
+const onPick = (src: string) => {
+  const fullUrl = src.startsWith("/")
+    ? `${window.location.origin}${src}`
+    : src;
 
-  const onPick = (src: string) => {
-    router.push(`/upload?imageUrl=${encodeURIComponent(src)}`);
-  };
+  router.push(`/upload?imageUrl=${encodeURIComponent(fullUrl)}`);
+};
+
 
   return (
     <div className="w-full mt-10">
