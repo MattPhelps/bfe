@@ -59,6 +59,12 @@ export default function Navbar() {
               Estimate Body Fat
             </a>
           </li>
+          <li>
+            <a href="/pricing"
+             className="hover:bg-transparent hover:underline focus:bg-transparent active:bg-transparent">
+              Pricing
+            </a>
+          </li>
         </ul>
       </div>
 

@@ -5,6 +5,7 @@ import React, { Suspense } from "react";
 import UploadDropzone from "@/app/components/UploadDropZone";
 import { trackEvent } from "@/app/libs/amplitude";
 import BodyFatEstimatorContent from "@/app/components/BodyFatEstimatorContent";
+import TryExamples from "@/app/components/TryExamples";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
@@ -76,15 +77,25 @@ function UploadPageContent() {
 };
 
 
- if (!imageUrl) {
+if (!imageUrl) {
   return (
     <>
-      <div className="hero min-h-screen -mt-40 flex items-center justify-center">
-        <div className="text-center lg:text-left max-w-md">
-          <h1 className="text-center text-3xl lg:text-4xl font-bold mb-10">
-            Upload a shirtless photo of yourself
-          </h1>
-          <UploadDropzone />
+      <div className="hero min-h-screen -mt-24 flex items-center justify-center">
+        <div className="flex flex-col items-center mt-10 gap-6">
+
+          {/* Keep the upload area narrow */}
+          <div className="text-center lg:text-left w-full max-w-md">
+            <h1 className="text-center text-2xl lg:text-3xl font-bold mb-12">
+              Upload an Image to Estimate Body Fat %
+            </h1>
+            <UploadDropzone />
+          </div>
+
+          {/* Give TryExamples more width so it can do the side-by-side layout */}
+          <div className="w-full max-w-lg mt-6 lg:max-w-xl">
+            <TryExamples />
+          </div>
+
         </div>
       </div>
 
@@ -92,6 +103,7 @@ function UploadPageContent() {
     </>
   );
 }
+
 
 
   return (

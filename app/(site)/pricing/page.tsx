@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Pricing from "@/app/components/Pricing";
 import PricingFAQ from "@/app/components/PricingFAQ";
 
-const title = "Pricing";
-const description = "";
+const title = "BodyFatEstimatorPricing";
+const description = "BodyFatEstimator pricing and plans. Estimate your body fat percentage from a photo and unlock advanced features.";
 
 export const metadata: Metadata = {
   title: title,
@@ -15,10 +15,19 @@ export default function PricingPage() {
    <>
    <div className="hero min-h-screen flex items-center justify-center">
    <div className="flex flex-col items-center mt-10 gap-6">
-   <h1 className="text-xl lg:text-4xl max-w-3xl font-bold text-center">Accurate Body Fat Estimates for 42x Less Than a Physical DEXA Scan</h1>
-    <p className="py-2 text-lg max-w-3xl text-center">The average cost of professional body fat estimate in the US is $125.50 per session. Our packages start from $3.</p>
+   <h1 className="text-2xl lg:text-3xl max-w-3xl font-bold text-center">Built for Tracking Real Progress, Not One-off Scans</h1>
+    <p className="py-2 text-lg max-w-3xl text-center">Used by thousands for regular check-ins and long-term weight loss and body recomposition tracking.</p>
       <Pricing />
       <PricingFAQ />
+      <div className="max-w-2xl text-center mb-20"> {/* Changed from max-w-md to max-w-lg */}
+            <h2 className="text-2xl lg:text-4xl font-bold">Get Your Estimate</h2>
+            <p className="py-6 text-lg">
+            Used by thousands for regular check-ins and long-term progress tracking
+            </p>
+            <a href="#pricing">
+              <button className="btn btn-primary btn-lg text-white">Choose Your Package</button>
+            </a>
+          </div>
     </div>
     </div>
    </>

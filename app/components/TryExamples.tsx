@@ -11,15 +11,15 @@ type Example = {
 };
 
 const EXAMPLES: Example[] = [
-  { id: "m1", label: "Example A", sublabel: "Lean", src: "/examples/example1.webp" },
-  { id: "m2", label: "Example B", sublabel: "Athletic", src: "/examples/example2.webp" },
-  { id: "m3", label: "Example C", sublabel: "Average", src: "/examples/example4.jpeg" },
-  { id: "m4", label: "Example D", sublabel: "Higher", src: "/examples/example3.webp" },
+  { id: "m2", label: "Example B", sublabel: "", src: "/examples/bfe-example2.png" },
+  { id: "m3", label: "Example C", sublabel: "", src: "/examples/bfe-example3.png" },
+  { id: "m4", label: "Example D", sublabel: "", src: "/examples/bfe-example1.png" },
+  { id: "m1", label: "Example A", sublabel: "", src: "/examples/bfe-example4.png" },
 ];
 
 export default function TryExamples() {
   const router = useRouter();
-  
+
 const onPick = (src: string) => {
   const fullUrl = src.startsWith("/")
     ? `${window.location.origin}${src}`
@@ -33,7 +33,7 @@ const onPick = (src: string) => {
     <div className="w-full mt-10">
       {/* Header row: text left, thumbnails right */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-       <div className="leading-tight font-bold text-base-content/80">
+       <div className="leading-tight font-bold text-base-content/70">
             <span className="inline sm:block">No image?</span>{" "}
             <span className="inline sm:block">Try one of these:</span>
         </div>
