@@ -32,6 +32,12 @@ export default function Footer() {
                 <p><a className="link link-hover" href="/#faqs">FAQs</a></p>
                 <p><a className="link link-hover" href="/contact">Contact</a></p>
             </nav>
+              <nav>
+                <h6 className="footer-title text-base font-heading uppercase tracking-wide">
+                Tools
+                </h6>
+                <p><a className="link link-hover" href="https://www.howolddoilook.ai/">How Old Do I Look?</a></p>
+            </nav>
             <nav>
                 <h6 className="footer-title text-base font-heading uppercase tracking-wide">
                 Legal

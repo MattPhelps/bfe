@@ -68,11 +68,11 @@ export default function Pricing() {
 
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center text-gray-500">
-                  <span className="mr-2 text-green-600">✓</span>
+                  <span className="mr-2 text-[#00b57a]">✓</span>
                   1 highly accurate estimate
                 </li>
                 <li className="flex items-center text-gray-500">
-                  <span className="mr-2 text-green-600">✓</span>
+                  <span className="mr-2 text-[#00b57a]">✓</span>
                   Advanced multi-image analysis
                 </li>
               </ul>
