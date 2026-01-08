@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import { showErrorToast } from '../libs/toast';
 
 export default function UploadDropzone() {
   const [fileName, setFileName] = useState<string | null>(null);
@@ -14,7 +15,7 @@ export default function UploadDropzone() {
 
     if (droppedFile) {
       if (droppedFile.size > MAX_FILE_SIZE) {
-        alert("File size exceeds 5MB!");
+        showErrorToast('File size exceeds 5MB. Please upload a smaller image.');
         return;
       }
 

@@ -3,6 +3,7 @@ import AmplitudeInitializer from "../components/AmplitudeInitializer";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import {Toaster} from "react-hot-toast";
 
 export default function RootLayout({
   children,
@@ -23,6 +24,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
