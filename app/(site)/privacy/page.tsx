@@ -80,7 +80,7 @@ export const metadata = {
           <p>
             If you have any questions about this Privacy Policy, please contact us
             at{" "}
-            <a href="mailto:matt@leandme.com" className="text-blue-500">
+            <a href="mailto:matt@leandme.com" className="text-blue-0">
               matt@leandme.com
             </a>
             .

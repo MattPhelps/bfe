@@ -62,7 +62,7 @@ export default function Pricing() {
                 Advanced Estimate
               </h2>
               <div className="flex items-center mr-12 mt-3">
-                <span className="text-4xl font-extrabold">$2.99</span>
+                <span className="text-4xl font-extrabold">$2.95</span>
                 <span className="text-xs text-gray-500 ml-2">/once</span>
               </div>
 
@@ -124,7 +124,7 @@ export default function Pricing() {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center text-gray-500">
                   <span className=" mr-2 text-green-600">✓</span>
-                  <span className="bg-[#D6EFE4] px-1 rounded">50</span>&nbsp; highly accurate estimates
+                  <span className="bg-[#D6EFE4] px-1 rounded">25</span>&nbsp; highly accurate estimates
                 </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-green-600">✓</span>
