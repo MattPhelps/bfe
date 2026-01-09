@@ -29,7 +29,7 @@ export default function HeroWithUpload() {
 
 
           <h1 className="text-4xl lg:text-5xl font-bold">
-            Find Out Your Body Fat % From a Photo
+            Estimate Body Fat % from a Photo
           </h1>
 
           <p className="py-6 text-lg mt-2">
