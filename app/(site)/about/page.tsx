@@ -38,7 +38,7 @@ export default function AboutPage() {
 
             <h2>How the estimate works (high level)</h2>
             <p>
-              The estimator analyzes visual cues from an uploaded image — such as body
+              The estimator analyzes visual cues from an uploaded photo — such as body
               proportions, fat distribution patterns, and surface features — to produce
               an approximate body fat range. Results are generated automatically and are
               intended for general fitness tracking, not medical evaluation.
@@ -61,14 +61,14 @@ export default function AboutPage() {
 
             <ul>
               <li>Not intended for medical diagnosis</li>
-              <li>Accuracy varies with image quality and consistency</li>
+              <li>Accuracy varies with photo quality and consistency</li>
               <li>Most useful for tracking trends, not single data points</li>
             </ul>
 
             <h2>Privacy</h2>
             <p>
-              Privacy matters. Uploaded images are used solely to generate an estimate.
-              Users should only upload images they are comfortable sharing with a
+              Privacy matters. Uploaded photos are used solely to generate an estimate.
+              Users should only upload photos they are comfortable sharing with a
               computer system. No guarantees are made beyond the technical requirements
               of operating the service.
             </p>

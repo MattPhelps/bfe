@@ -15,7 +15,7 @@ export default function UploadDropzone() {
 
     if (droppedFile) {
       if (droppedFile.size > MAX_FILE_SIZE) {
-        showErrorToast('File size exceeds 5MB. Please upload a smaller image.');
+        showErrorToast('File size exceeds 5MB. Please upload a smaller photo.');
         return;
       }
 
@@ -104,12 +104,12 @@ export default function UploadDropzone() {
 
         </span>
 
-        <span className="leading-none">Upload Image</span>
+        <span className="leading-none">Upload Photo</span>
       </span>
     </button>
 
       <div className="text-center text-gray-600">
-        <p className="text-base mb-2">drop an image here,</p>
+        <p className="text-base mb-2">drop an photo here,</p>
 
         {/* ✅ clickable “paste URL” */}
         <button

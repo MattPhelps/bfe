@@ -21,7 +21,7 @@ export const metadata = {
           <ul className="list-disc pl-6">
             <li>Personal details like your name and email address.</li>
             <li>
-              Images or other content that you upload to use our services.
+              Photos or other content that you upload to use our services.
             </li>
             <li>
               Analytical data, such as usage patterns and browser information.

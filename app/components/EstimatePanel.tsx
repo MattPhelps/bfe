@@ -1,6 +1,7 @@
 "use client";
 import { parsePercent, getCategory, getRange } from "@/app/libs/estimateUtils";
 import ConfidenceBand from "@/app/components/ConfidenceBand";
+import { trackEvent } from "../libs/amplitude";
 
 export default function EstimatePanel({
   estimate,
@@ -62,9 +63,16 @@ export default function EstimatePanel({
           <div className="mt-6 flex flex-col sm:flex-row gap-4 mt-8">
   {/* Primary CTA + helper */}
   <div className="flex flex-col gap-1 flex-1">
-    <a href="/pricing" className="btn btn-primary btn-lg text-white w-full">
-      <span className="whitespace-nowrap">Improve Accuracy →</span>
-    </a>
+          <a
+        href="/pricing"
+        onClick={() =>
+          trackEvent("Go to Pricing", { location: "estimate panel cta" })
+        }
+        className="btn btn-primary btn-lg text-white w-full"
+      >
+        <span className="whitespace-nowrap">Get an Accurate Estimate →</span>
+      </a>
+
 
     <p className="text-xs text-gray-600 font-medium mt-1">
       🎯 use multiple photos for high accuracy

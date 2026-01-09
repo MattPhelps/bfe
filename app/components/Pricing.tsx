@@ -28,27 +28,24 @@ export default function Pricing() {
 
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center text-gray-500">
-                  <span className="mr-2 text-gray-500">–</span>
-                  Free
+                  <span className="mr-2 text-grray-500">–</span>
+                  Roughly accurate
                 </li>
                  <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-grray-500">–</span>
-                  Single photo analysis
+                  Single photo input
                 </li>
-                <li className="flex items-center text-gray-500">
-                  <span className="mr-2 text-grray-500">–</span>
-                  Rough accuracy
-                </li>
+                
               </ul>
               <div className="card-actions mt-6">
                 <a
                   href="/upload"
                   target=""
-                  rel="noopener noreferrer"
+                  rel=""
                   className="btn bg-gray-300 text-lg text-white w-full"
                 >
                   <span className="font-semibold text-base">
-                  Try it Out
+                  Already used
                 </span>
                 </a>
                 <p className="text-sm text-center text-gray-500 mt-2">
@@ -120,6 +117,7 @@ export default function Pricing() {
 
               </h2>
               <div className="flex items-center mr-12 mt-3">
+                
                 <span className="text-lg text-gray-500 line-through mr-2">$25</span>
                 <span className="text-4xl font-extrabold">$7</span>
                 <span className="text-xs text-gray-500 ml-2">/once</span>
@@ -128,26 +126,30 @@ export default function Pricing() {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center text-gray-500">
                   <span className=" mr-2 text-green-600">✓</span>
-                  <span className="bg-[#D6EFE4] px-1 rounded">10</span>&nbsp; highly accurate estimates
+                  <span className="bg-[#D6EFE4] px-1 rounded">10</span>&nbsp; estimates
+                </li>
+                <li className="flex items-center text-gray-500">
+                  <span className=" mr-2 text-green-600">✓</span>
+                  Ultra&nbsp;accurate
                 </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-green-600">✓</span>
-                  Multi-image analysis
+                  Multiple photo input
                 </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-green-600">✓</span>
-                  Track your progress
+                  Optional body stats input
                 </li> 
               </ul>
               <div className="card-actions mt-6">
                 <a
-                  href="https://buy.stripe.com/9AQ8ysdnWdvCaZ2aEG"
+                  href="https://buy.stripe.com/8x228r5hV8lrbhV06cfAc08"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel=""
                   className="btn btn-primary text-lg text-white w-full"
                 >
                   <span className="text-white font-semibold text-base">
-                  Upgrade Now
+                  Get an Accurate Estimate →
                 </span>
                 </a>
                 <p className="text-sm text-center text-green-600 mt-2">

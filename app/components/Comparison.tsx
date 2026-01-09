@@ -48,7 +48,7 @@ export default function Comparison() {
                   </li>
                   <li className="flex items-center text-neutral">
                     <span className="mr-2">✅</span>
-                    Upload a picture and get instant, accurate results from anywhere
+                    Upload a photo and get instant, accurate results from anywhere
                   </li>
                   <li className="flex items-center text-neutral">
                     <span className="mr-2">✅</span>

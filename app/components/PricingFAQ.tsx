@@ -57,7 +57,7 @@ export default function PricingFAQ() {
               <div className="collapse-content">
                 <p className="text-base text-gray-600">
                   Yes. Your photos are processed securely and are never shared, sold, or used for training public AI models. 
-                  Images are only used to generate your body fat estimate and are deleted automatically after processing.
+                  Photos are only used to generate your body fat estimate and are deleted automatically after processing.
                 </p>
               </div>
             </div>

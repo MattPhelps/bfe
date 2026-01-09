@@ -1,5 +1,3 @@
-import { trackEvent } from "../libs/amplitude";
-
 export default function CTA() {
 
   return (

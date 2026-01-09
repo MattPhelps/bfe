@@ -15,8 +15,8 @@ export default function PricingPage() {
    <>
    <div className="hero min-h-screen flex items-center justify-center">
    <div className="flex flex-col items-center mt-10 gap-6">
-   <h1 className="text-2xl lg:text-3xl max-w-3xl font-bold text-center">Built for Tracking Real Progress, Not One-off Scans</h1>
-    <p className="py-2 text-lg max-w-3xl text-center">Used by thousands for regular check-ins and long-term weight loss and body recomposition tracking.</p>
+   <h1 className="text-2xl lg:text-3xl max-w-3xl font-bold text-center">Want a More Accurate Body Fat Estimate?</h1>
+    <p className="py-2 text-lg max-w-3xl text-center">One photo gives a rough estimate. Add more photos and body stats to narrow the estimate range.</p>
       <Pricing />
       <PricingFAQ />
       <div className="max-w-2xl text-center mb-20"> {/* Changed from max-w-md to max-w-lg */}
@@ -25,7 +25,7 @@ export default function PricingPage() {
             Used by thousands for regular check-ins and long-term progress tracking
             </p>
             <a href="/pricing/#pricing">
-              <button className="btn btn-primary btn-lg text-white">Choose Your Package</button>
+              <button className="btn btn-primary btn-lg text-white">Get a More Accurate Estimate →</button>
             </a>
           </div>
     </div>
