@@ -29,11 +29,11 @@ export default function HeroWithUpload() {
 
 
           <h1 className="text-4xl lg:text-5xl font-bold">
-            Find Out Your Body Fat % — <i>Instantly</i>
+            Find Out Your Body Fat % From a Photo
           </h1>
 
           <p className="py-6 text-lg mt-2">
-            Upload a photo and let our AI calculate your body fat % in seconds. Fast, accurate, and{" "}
+            Upload a photo and get an AI body fat estimate in seconds. Fast, accurate, and{" "}
             <span className="inline-block bg-primary text-white px-2 py-0.5 rounded-md text-base font-semibold">
               free
             </span>

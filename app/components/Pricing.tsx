@@ -31,6 +31,10 @@ export default function Pricing() {
                   <span className="mr-2 text-gray-500">–</span>
                   Free
                 </li>
+                 <li className="flex items-center text-gray-500">
+                  <span className="mr-2 text-grray-500">–</span>
+                  Single photo analysis
+                </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-grray-500">–</span>
                   Rough accuracy
@@ -44,7 +48,7 @@ export default function Pricing() {
                   className="btn bg-gray-300 text-lg text-white w-full"
                 >
                   <span className="font-semibold text-base">
-                  Try Now
+                  Try it Out
                 </span>
                 </a>
                 <p className="text-sm text-center text-gray-500 mt-2">
@@ -55,7 +59,7 @@ export default function Pricing() {
           </div>
 
 
-          {/* Card 2 */}
+          {/* Card 2 
           <div id="pricing" className="card bg-base-100 w-full max-w-lg shadow-xl">
             <div className="card-body">
               <h2 className="text-md lg:text-lg text-left">
@@ -92,7 +96,7 @@ export default function Pricing() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Card 3 */}
           <div className="relative w-full max-w-lg">
@@ -107,7 +111,7 @@ export default function Pricing() {
          <div className="card bg-base-100 w-full max-w-lg shadow-xl border-2 border-green-500 shadow-green-100/50">
             <div className="card-body">
               <h2 className="text-md lg:text-lg text-left">
-                Progress Tracking
+                Accurate Estimate
                  {/*
                 <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
                   MOST CHOSEN
@@ -116,19 +120,19 @@ export default function Pricing() {
 
               </h2>
               <div className="flex items-center mr-12 mt-3">
-                <span className="text-lg text-gray-500 line-through mr-2">$45</span>
-                <span className="text-4xl font-extrabold">$19</span>
+                <span className="text-lg text-gray-500 line-through mr-2">$25</span>
+                <span className="text-4xl font-extrabold">$7</span>
                 <span className="text-xs text-gray-500 ml-2">/once</span>
               </div>
 
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center text-gray-500">
                   <span className=" mr-2 text-green-600">✓</span>
-                  <span className="bg-[#D6EFE4] px-1 rounded">25</span>&nbsp; highly accurate estimates
+                  <span className="bg-[#D6EFE4] px-1 rounded">10</span>&nbsp; highly accurate estimates
                 </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-green-600">✓</span>
-                  Advanced multi-image analysis
+                  Multi-image analysis
                 </li>
                 <li className="flex items-center text-gray-500">
                   <span className="mr-2 text-green-600">✓</span>
@@ -143,7 +147,7 @@ export default function Pricing() {
                   className="btn btn-primary text-lg text-white w-full"
                 >
                   <span className="text-white font-semibold text-base">
-                  Buy Now
+                  Upgrade Now
                 </span>
                 </a>
                 <p className="text-sm text-center text-green-600 mt-2">

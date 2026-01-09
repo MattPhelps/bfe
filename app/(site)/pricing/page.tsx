@@ -24,7 +24,7 @@ export default function PricingPage() {
             <p className="py-6 text-lg">
             Used by thousands for regular check-ins and long-term progress tracking
             </p>
-            <a href="#pricing">
+            <a href="/pricing/#pricing">
               <button className="btn btn-primary btn-lg text-white">Choose Your Package</button>
             </a>
           </div>
