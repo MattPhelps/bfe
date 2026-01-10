@@ -70,7 +70,7 @@ export default function EstimatePanel({
         }
         className="btn btn-primary btn-lg text-white w-full"
       >
-        <span className="whitespace-nowrap">Get an Accurate Estimate →</span>
+        <span className="whitespace-nowrap">Upgrade Accuracy →</span>
       </a>
 
 

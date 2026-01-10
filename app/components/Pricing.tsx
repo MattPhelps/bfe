@@ -149,7 +149,7 @@ export default function Pricing() {
                   className="btn btn-primary text-lg text-white w-full"
                 >
                   <span className="text-white font-semibold text-base">
-                  Get an Accurate Estimate →
+                  Upgrade Now
                 </span>
                 </a>
                 <p className="text-sm text-center text-green-600 mt-2">

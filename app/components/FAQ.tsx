@@ -252,11 +252,6 @@ export default function FAQ() {
               </div>
             ))}
           </div>
-
-          <div className="mt-10 text-sm text-gray-500 leading-relaxed">
-            This site provides a visual AI body fat estimate from photos. Results may vary based on lighting,
-            pose, and clothing. For medical-grade measurement, consider professional methods like DEXA.
-          </div>
         </div>
       </div>
     </div>

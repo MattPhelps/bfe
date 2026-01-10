@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-3 text-base text-gray-300 leading-relaxed">
-            Estimate body fat percentage from a photo with AI.
+            Estimate your body fat percentage from a photo with AI.
           </p>
 
           {/* Social proof */}
