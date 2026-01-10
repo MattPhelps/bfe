@@ -19,7 +19,7 @@ function UploadPageContent() {
           <div className="flex flex-col items-center mt-10 gap-6">
             <div className="text-center lg:text-left w-full max-w-md">
               <h1 className="text-center text-2xl lg:text-3xl font-bold mb-12">
-                Upload an Image to Estimate Body Fat %
+                Upload a Photo to Estimate Body Fat %
               </h1>
               <UploadDropzone />
             </div>

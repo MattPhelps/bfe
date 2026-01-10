@@ -34,7 +34,7 @@ const onPick = (src: string) => {
       {/* Header row: text left, thumbnails right */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
        <div className="leading-tight font-bold text-base-content/70">
-            <span className="inline sm:block">No image?</span>{" "}
+            <span className="inline sm:block">No photo?</span>{" "}
             <span className="inline sm:block">Try one of these:</span>
         </div>
 
