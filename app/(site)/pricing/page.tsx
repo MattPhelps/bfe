@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Pricing from "@/app/components/Pricing";
 import PricingFAQ from "@/app/components/PricingFAQ";
 
-const title = "BodyFatEstimator Pricing";
-const description = "BodyFatEstimator pricing and plans. Estimate your body fat percentage from a photo and unlock advanced features.";
+const title = "Body Fa Estimator Pricing";
+const description = "Body Fat Estimator pricing and plans. Estimate your body fat percentage from a photo and unlock advanced features.";
 
 export const metadata: Metadata = {
   title: title,
